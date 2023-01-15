@@ -26,4 +26,4 @@ clone this project to your local repo ```git clone https://github.com/GyurMay/no
 ![image](https://user-images.githubusercontent.com/19346467/212520787-b2ca7367-5eb6-446c-a772-7566a05aa703.png)
 
 
-11. Now the audio will start playing and you can click on the note lines to play the recording at that particular point of your recording
+11. Now the audio will start playing and you can click on the note lines to play the recording at that particular point of your taken notes
