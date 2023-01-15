@@ -4,7 +4,7 @@ clone this project to your local repo ```git clone https://github.com/GyurMay/no
 1. Record audio separately on the iphone voice recorder App.
 
 2. As soon as you start recording on the app, type started on the app/webpage and press enter. you should have the following as of here
-![image](https://user-images.githubusercontent.com/19346467/212520528-da5ee70c-6a9e-4214-af08-42e485e2bca9.png)
+![image](https://user-images.githubusercontent.com/19346467/212520880-505484c8-d57f-4289-bfb0-38e78f8fbbba.png)
 
 3. Now you can begin taking notes normally. Everytime an Enter is pressed, there will be a timestamp in front of the note to correlate recording-note.
 
