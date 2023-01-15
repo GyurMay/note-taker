@@ -1,4 +1,5 @@
 ## How to Use?
+clone this project to your local repo ```git clone https://github.com/GyurMay/note-taker/```
 
 1. Record separately on the iphone voice recorder App.
 
@@ -12,7 +13,8 @@
 5. Stop the recording on the phone when the lecture/meeting ends and then get it to your PC via Google Drive, OneDrive or any other filesharing option you use.
 
 6. Create a recordings folder on the parent directory of where this notetaker.html is stored.
-**ignore the nodeServer.js file** ![image](https://user-images.githubusercontent.com/19346467/212520692-06e0717b-db1d-4323-83eb-c84f22d0fbd5.png)
+
+**btw, ignore the nodeServer.js file from here** ![image](https://user-images.githubusercontent.com/19346467/212520692-06e0717b-db1d-4323-83eb-c84f22d0fbd5.png)
 
 7. Now store the downloaded recording (.m4a) to the recordings folder just created
 
