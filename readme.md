@@ -1,7 +1,7 @@
 ## How to Use?
 clone this project to your local repo ```git clone https://github.com/GyurMay/note-taker/```
 
-1. Record separately on the iphone voice recorder App.
+1. Record audio separately on the iphone voice recorder App.
 
 2. As soon as you start recording on the app, type started on the app/webpage and press enter. you should have the following as of here
 ![image](https://user-images.githubusercontent.com/19346467/212520528-da5ee70c-6a9e-4214-af08-42e485e2bca9.png)
