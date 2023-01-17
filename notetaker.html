@@ -59,7 +59,7 @@ h2, h4{
 	<textarea id="t2" style="display:none"></textarea>
 	<br><br>
 	<ul id="ulList">
-		<h5>Select a recording from this directory (.m4a files)</h5>
+		<h5>Select a recording from directory <a href="../recordings" target="_blank">"../recordings"</a> (.m4a files)</h5>
 	</ul>
 	<button onclick="output()" class="btn btn-success">Process</button>
 
@@ -70,6 +70,7 @@ h2, h4{
 			<script>
 			var globalRecordingLocation;
 			nld = true;
+			var globalRecordingsDir = "../recordings/";
 			t.onkeydown = e => {
 				// console.log(e)
 				if(nld){ // if newlined, enter is pressed
@@ -90,11 +91,16 @@ h2, h4{
 				a = t.value.split("\n");
 				// a.split("")
 				for(i = 0; i<a.length; i++){
-						if(a[i] === "") a.splice(i, 1, )
+					// console.log(a[i], a[i].slice(8,))
+					console.log(a[i],"==", a[i].slice(8, ))
+						if(a[i].slice(9, ) === ""){ // after the time stamp and the space 
+							console.log(`empty so removing at index ${i}...`)
+							a.splice(i, 1, );
+							console.log("new array", a)
+						}
         }
 
 				for(i = 0; i<a.length; i+=3){
-					if(a[i] === "") a.splice(i, 1, ); 
 					if(a[i] !== '</div>' && parseInt(a[i].substr(0,2)) !== NaN){
 					// console.log(a[i].substr(0,2) ,parseInt(a[i].substr(0,2)) !== NaN);
 
@@ -157,7 +163,7 @@ h2, h4{
 				}
 
 				
-				audioPlay.src = globalRecordingLocation;
+				audioPlay.src = globalRecordingsDir + globalRecordingLocation;
 				audioPlay.play();
 				document.querySelector('#outputScreen h3').textContent += globalRecordingLocation;
 			}
@@ -186,7 +192,7 @@ h2, h4{
 			}
 
 			(async() => {
-				const recordingsAvailable = await getRecordings("../recordings");
+				const recordingsAvailable = await getRecordings(globalRecordingsDir);
 				recordingsAvailable.forEach(x => {
 					let li = document.createElement('li');
 					let button = document.createElement('button');
